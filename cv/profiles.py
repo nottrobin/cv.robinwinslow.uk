@@ -13,10 +13,10 @@ def jsonResponse(url):
     response = urlopen(url)
 
     if response.info().get('Content-Encoding') == 'gzip':
-        binaryStream = BytesIO(response.readall()  )
+        binaryStream = BytesIO(response.read())
         zipFile = gzip.GzipFile(fileobj=binaryStream)
-        responseContents = zipFile.read().decode('utf-8')
+        responseContents = zipFile
     else:
-        responseContents = response.readall().decode('utf-8')
+        responseContents = response
 
-    return json.loads(responseContents)
+    return json.load(responseContents)
