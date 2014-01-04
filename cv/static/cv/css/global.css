@@ -1,0 +1,141 @@
+body {
+    font-family: "source sans pro";
+    font-size: 1.4em;
+    margin: 0;
+}
+h1 {
+    font-family: "libre baskerville";
+    text-align: center; 
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1.4em;
+}
+
+header {
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+}
+
+a { color: #ccc; }
+a:hover { color: #666; }
+
+.page-navigation ul {
+    padding: 0.5em 1em;
+    text-align: center;
+    background-color: #666;
+    color: white;
+}
+.page-navigation li {
+    list-style-type: none;
+    display: inline-block;
+    text-transform: lowercase;
+    position: relative;
+    padding: 0.5em 0.7em;
+}
+.page-navigation li a {
+    text-decoration: none;
+}
+.page-navigation li a:hover {
+    color: inherit;
+}
+.page-navigation li:not(:first-child):after {
+    content: '|';
+    display: block;
+    left: -0.35em;
+    top: 0.5em;
+    position: absolute;
+    opacity: 0.2;
+}
+
+.headline {
+    text-transform: lowercase;
+    text-align: center;
+    padding: 0.5em 2em;
+    box-sizing: border-box;
+}
+.headline a {
+    font-size: 0.8em;
+    text-decoration: none;
+}
+.headline a .highlight {
+    font-size: 3em;
+    color: black;
+}
+
+.section-title {
+    margin-top: 2em;
+    text-align: center;
+    position: relative;
+    opacity: 0.5;
+    z-index: 1;
+    overflow: hidden;
+}
+.section-title:before {
+    content: '';
+    background-color: #ccc;
+    box-shadow: inset -80px 0 50px -50px white, inset 80px 0 50px -50px white;
+    width: 50%;
+    display: block;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 1.6em;
+    z-index: 0;
+}
+.section-title h1 {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 0 50px 10px white;
+}
+section {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 50em;
+}
+section .summary, section .topic-navigation {
+    padding: 1em;
+    margin: 0;
+}
+section .topic-navigation {
+    min-width: 10em;
+    margin-right: 1em;
+}
+section:nth-child(even) .topic-navigation { float: right; }
+section:nth-child(odd) .topic-navigation { float: left; }
+
+footer {
+    background-color: #eee;
+    overflow: hidden;
+    padding: 1em;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.external-navigation ul {
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1em;
+}
+.external-navigation li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 1em;
+    text-align: center;
+    width: 7em;
+}
+.external-navigation li a {
+    display: block;
+    text-decoration: none;
+}
+.external-navigation li img {
+    display: block;
+    clear: both;
+    margin: 0 auto 0.5em auto;
+    width: 3em;
+}
