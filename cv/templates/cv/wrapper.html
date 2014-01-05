@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
        
-        <title>{{ title }} | Robin Winslow</title>
+        <title>{% block title %}{% endblock %} | Robin Winslow</title>
         
         {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
@@ -73,7 +73,17 @@
             </script>
         </header>
 
+        <nav class="site-navigation">
+            <ul>
+                <li><a href="{% url 'home' %}">Summary</a></li>
+                <li><a href="{% url 'roles' %}">Recent roles</a></li>
+                <li><a href="{% url 'publications' %}">Publications</a></li>
+            </ul>
+        </nav>
+
+        <main>
         {% block content %}{% endblock %}
+        </main>
 
         <footer>
             <aside>
