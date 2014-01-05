@@ -1,44 +1,60 @@
 {% extends "cv/wrapper.html" %}
 
+{% block title %}My CV{% endblock %}
+
 {% block content %}
+
 <nav class="page-navigation">
     <ul>
-        <li><a href="#roles">Previous roles</a></li>
+        <li><a href="#roles">Recent roles</a></li>
+        <li><a href="#publications">Publications</a></li>
         <li><a href="#client-side">Client-side tech</a></li>
         <li><a href="#server-side">Server-side tech</a></li>
-        <li><a href="#study">Study</a></li>
-        <li><a href="#management">Management</a></li>
-        <li><a href="#philosophy">Philosophy</a></li>
         <li><a href="#sites">Sites</a></li>
-        <li><a href="#publications">Publications</a></li>
     </ul>
 </nav>
 
 <section id="roles">
-    <div class="section-title"><h1>Previous roles</h1></div>
+    <div class="section-title"><h1>Recent roles</h1></div>
 
     <nav class="topic-navigation date-list">
         <ul>
             <li>
-                <small class="date">2012</small>
-                Lead developer
-                <small>@ <a href="http://hillarys.co.uk">Hillarys</a></small>
+                <small class="date">2012-2014</small>
+                <a href="/roles/#lead-developer">Lead developer</a>
+                <small>( @ <a href="http://www.hillarys.co.uk">Hillarys</a> )</small>
             </li>
             <li>
-                <small class="date">2011</small>
-                Web developer
-                <small>@ <a href="http://hillarys.co.uk">IPC Media</a></small>
+                <small class="date">2011-2012</small>
+                <a href="/roles/#full-stack-developer">Full-stack developer</a>
+                <small>( @ <a href="http://www.ipcmedia.com/">IPC Media</a> )</small>
             </li>
             <li>
-                <small class="date"></small>
-                Other roles
-                <small>@ <a href="http://energiseuk.co.uk/">Energise</a>, <a href="http://www.mokoro.co.uk/">Mokoro</a>, <a href="http://www.tamar.com/">Tamar</a></small>
+                <small class="date">2005-2010</small>
+                <a href="/roles/#previous-roles">Previous roles</a>
+                <small>( @ <a href="http://energiseuk.co.uk/">Energise</a>, <a href="http://www.mokoro.co.uk/">Mokoro</a>, <a href="http://www.tamar.com/">Tamar</a> )</small>
             </li>
-            <li>My dream job</li>
         </ul>
     </nav>
 
-    <p class="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <p class="summary">I'm a full-stack web developer with 6 years' experience. I've worked on large-scale, high-performance sites across many industries. I have experience working in and leading agile teams in large and small organisations.</p>
+</section>
+
+<section id="publications">
+    <div class="section-title"><h1>Publications</h1></div>
+
+    <nav class="topic-navigation">
+        <ul>
+            <li><a href="{% url 'publications' %}#static-site-generators">Presentation: Static Site Generators</a></li>
+            <li><a href="{% url 'publications' %}#html5-and-how-to-use-it">Presentation: HTML5 and how to use it</a></li>
+            <li><a href="{% url 'publications' %}#lets-talk-about-css">Presentation: Let's talk about CSS</a></li>
+            <li><a href="{% url 'publications' %}#micro-generation-schemes-user-behaviours-and-attitudes-towards-energy-consumption">Journal paper: Micro-generation schemes</a></li>
+            <li><a href="{% url 'publications' %}#other-presentations">Other presentations</a></li>
+            <li><a href="{% url 'publications' %}#my-blog">My blog</a></li>
+        </ul>
+    </nav>
+
+    <p class="summary">I like writing and giving presentations. I have given several presentations about web technologies, including one to over 100 people. I presented on sociological topics as part of my MSc, and I have published a journal article. I also have a blog.</p>
 </section>
 
 <section id="client-side">
@@ -55,7 +71,7 @@
         </ul>
     </nav>
 
-    <p class="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <p class="summary">I have extensive experience with all front-end web technologies, and I follow the development of new standards and practices closely. I am particularly interested in semantic markup, responsive design, usability and performance.</p>
 </section>
 
 <section id="server-side">
@@ -63,96 +79,39 @@
 
     <nav class="topic-navigation">
         <ul>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>Dev ops</li>
-            <li>Python</li>
-            <li>C#</li>
-            <li>Ruby</li>
+            <li>PHP (Symfony, Zend, CodeIgniter, Magento)</li>
+            <li>Python (Django)</li>
+            <li>C# (Umbraco, MCV3)</li>
+            <li>Ruby (Jekyll), Perl (Catalyst)</li>
+            <li>Version control (git, subversion)</li>
+            <li>Dev ops (Heroku, Debian, CentOS, Apache, Nginx)</li>
+            <li>Continuous integration (Jenkins, Travis)</li>
         </ul>
     </nav>
 
-    <p class="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-</section>
-
-<section id="management">
-    <div class="section-title"><h1>Management</h1></div>
-
-    <nav class="topic-navigation">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
-
-    <p class="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-</section>
-
-<section id="study">
-    <div class="section-title"><h1>Study</h1></div>
-
-    <nav class="topic-navigation">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
-
-    <p class="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-</section>
-
-
-<section id="philosophies">
-    <div class="section-title"><h1>Philosophies</h1></div>
-
-    <nav class="topic-navigation">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
-
-    <p class="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <p class="summary">I have experience of many server-side languages, and have extensive experience architecting code. I have setup version control systems and strategies, and I have good knowledge of design patterns and test-driven developement. I also have a lot of experience with managing servers, and using various hosting services.</p>
 </section>
 
 <section id="sites">
     <div class="section-title"><h1>Sites</h1></div>
 
-    <nav class="topic-navigation">
+    <h2>Some websites I have worked on</h2>
+
+    <nav class="block-navigation">
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><a href="http://robinwinslow.co.uk">robinwinslow.co.uk</a></li>
+            <li><a href="http://www.web-blinds.com">web-blinds.com</a></li>
+            <li><a href="http://www.arena-blinds.com">arena-blinds.com</a></li>
+            <li><a href="http://www.premiershutters.co.uk">premiershutters.co.uk</a></li>
+            <li><a href="http://www.nextshutters.co.uk">nextshutters.co.uk</a></li>
+            <li><a href="http://www.countrylife.co.uk">countrylife.co.uk</a></li>
+            <li><a href="http://www.horseandhound.co.uk">horseandhound.co.uk</a></li>
+            <li><a href="http://www.shootinguk.co.uk">shootinguk.co.uk</a></li>
+            <li><a href="http://www.mokoro.co.uk">mokoro.co.uk</a></li>
+            <li><a href="http://www.endsleigh.co.uk">engsleigh.co.uk</a></li>
+            <li><a href="http://www.quickcarquote.co.uk">quickcarquote.co.uk</a></li>
+            <li><a href="http://www.dreams.co.uk/">dreams.co.uk</a></li>
         </ul>
     </nav>
-
-    <p class="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-</section>
-
-<section id="publications">
-    <div class="section-title"><h1>Publications</h1></div>
-
-    <nav class="topic-navigation">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
-
-    <p class="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 </section>
 {% endblock content %}
