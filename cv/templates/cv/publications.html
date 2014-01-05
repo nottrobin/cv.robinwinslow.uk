@@ -1,0 +1,57 @@
+{% extends "cv/wrapper.html" %}
+{% load markdown %}
+
+{% block title %}Recent roles{% endblock %}
+
+{% block content %}
+
+<nav class="page-navigation">
+    <ul>
+        <li><a href="#static-site-generators">Presentation: Static Site Generators</a></li>
+        <li><a href="#html5-and-how-to-use-it">Presentation: HTML5 and how to use it</a></li>
+        <li><a href="#lets-talk-about-css">Presentation: Let's talk about CSS</a></li>
+        <li><a href="#micro-generation-schemes-user-behaviours-and-attitudes-towards-energy-consumption">Journal paper: Micro-generation schemes</a></li>
+        <li><a href="#other-presentations">Other presentations</a></li>
+        <li><a href="#my-blog">My blog</a></li>
+    </ul>
+</nav>
+
+{% filter markdown %}
+
+Presentation: Static Site Generators
+===
+
+I gave a presentation at Second Wednesday in Nottingham to over 100 people [on the use of Static Site Generators for blog hosting](http://nottrobin.github.io/presentations/static-site-generators.html).
+
+Presentation: HTML5 and how to use it
+===
+
+I gave a presentation to the digital department at IPC Media [on HTML5](http://prezi.com/vwrbwbhbwt2m/html5-and-how-to-use-it/).
+
+As a precursor to this presentation, Second Wednesday also published [an interview with me](http://secondwednesday.org.uk/robin-winslow.php).
+
+Let's talk about CSS
+===
+
+I gave a presentation to the digital department at IPC Media [about CSS best practice and the potential benefits of CSS preprocessors](http://prezi.com/-eq7oqt-i3cs/lets-talk-about-css/).
+
+Journal paper: Micro-generation schemes
+===
+
+Following a piece of coursework I did for my MSc, I collaborated with my supervisors on a journal paper entitled ["Micro-generation schemes: user behaviours and attitudes towards energy consumption"](http://www.tandfonline.com/doi/abs/10.1080/00140139.2012.723140).
+
+Other presentations
+===
+
+Two presentations I gave during my MSc:
+
+- [The effect of mobile internet usability on lower income groups](http://prezi.com/kofkdzforokn/the-effect-of-mobile-internet-usability-on-lower-income-groups/)
+- [Issues affecting people's behaviour towards refuse recycling in the home](http://prezi.com/gn3ts4rl-nq-/issues-affecting-peoples-behaviour-towards-refuse-recycling-in-the-home/)
+
+My blog
+===
+
+I have a blog which I post to a few times a month. It's [about web dev, politics and my random thoughts](http://robinwinslow.co.uk).
+
+{% endfilter markdown %}
+{% endblock content %}

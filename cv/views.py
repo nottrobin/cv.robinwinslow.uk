@@ -10,6 +10,12 @@ from cv.profiles import repositories, reputation
 class HomeView(TemplateView):
     template_name="cv/index.html"
 
+class RolesView(TemplateView):
+    template_name="cv/roles.html"
+
+class PublicationsView(TemplateView):
+    template_name="cv/publications.html"
+
 def profiles(request):
     profiles = {
         'repositories' : repositories(),
