@@ -37,6 +37,11 @@ small {
     font-size: 0.8em;
 }
 
+.inline-aside {
+    display: inline-block;
+    text-align: right;
+}
+
 .site-navigation ul {
     padding: 0.5em 1em;
     text-align: center;
@@ -86,7 +91,7 @@ small {
 .headline {
     text-transform: lowercase;
     text-align: center;
-    padding: 0.5em 2em;
+    padding: 0.5em;
     font-size: 3em;
     font-weight: bold;
     box-sizing: border-box;
@@ -98,6 +103,21 @@ small {
     opacity: 0.5;
     font-size: 0.4em;
     color: #366;
+}
+@media (max-width: 48rem) {
+    .headline a small {
+        display: none;
+    }
+}
+@media (max-width: 35rem) {
+    .headline {
+        font-size: 2em;
+    }
+}
+@media (max-width: 15rem) {
+    .headline {
+        font-size: 1.5em;
+    }
 }
 
 main {
@@ -169,6 +189,14 @@ section .summary {
 section:nth-child(odd) .topic-navigation { float: right; }
 section:nth-child(even) .topic-navigation { float: left; }
 
+@media (max-width: 46rem) {
+    section .topic-navigation,
+    section:nth-child(odd) .topic-navigation,
+    section:nth-child(even) .topic-navigation {
+        float: none;
+    }
+}
+
 footer {
     background-color: #eee;
     overflow: hidden;
@@ -208,6 +236,7 @@ footer {
 }
 
 .block-navigation li {
+    min-width: 10em;
     width: 25%;
     -moz-box-sizing: border-box;
          box-sizing: border-box;
