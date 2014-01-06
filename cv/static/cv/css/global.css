@@ -38,11 +38,6 @@ small {
     text-transform: lowercase;
 }
 
-.inline-aside {
-    display: inline-block;
-    text-align: right;
-}
-
 .site-navigation ul {
     padding: 0.5em 1em;
     text-align: center;
@@ -165,10 +160,22 @@ main nav, main p, main ul, main ol {
     text-align: left;
 }
 
+main nav small {
+    display: inline-block;
+}
+main nav.date-list small.date {
+    display: inline;   
+}
+main nav li {
+    padding-bottom: 0.5em;
+}
+
 main p, main ul, main ol, main .list-heading {
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .list-heading {
