@@ -14,7 +14,7 @@ Running locally
 ---
 
 ``` bash
-$ sudo install python-pip
-$ pip install -r requirements.txt
+$ sudo apt-get install python-pip python-dev libpq-dev
+$ sudo pip install -r requirements.txt
 $ ./manage.py runserver
 ```
