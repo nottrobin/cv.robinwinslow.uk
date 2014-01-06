@@ -1,0 +1,23 @@
+{% extends "cv/wrapper.html" %}
+{% load markdown %}
+
+{% block title %}About me{% endblock %}
+
+{% block content %}
+
+{% filter markdown %}
+
+About me
+===
+
+In code, as in life, I like simplicity and I like elegance. I will work maybe a little too hard to find the most elegant solution to a problem. I'm opinionated and I will happily share my opinions in almost any situation.
+
+I like openness. I respect the need for privacy sometimes, but it tends to make me uncomfortable. My ideal company would strive to be as open and transparent as they possible could.
+
+I believe strongly in fostering a no-blame culture, where everyone feels encouraged to give their opinion, and in empowering and respecting all employees. I probably won't fit in well to a company with a steep or rigid hierarchy, or a company that doesn't treat their employees with respect.
+
+When I'm not worrying about society or the internet, I like watching films, playing tennis, chatting with friends or occasionally skiing.
+
+{% endfilter %}
+
+{% endblock content %}

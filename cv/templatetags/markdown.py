@@ -8,4 +8,4 @@ register = template.Library()
 @register.filter(is_safe=True)
 @stringfilter
 def markdown(value):
-    return mark_safe(markdown2.markdown(value,safe_mode=True,extras=["header-ids"]))
+    return mark_safe(markdown2.markdown(value,extras=["header-ids"]))

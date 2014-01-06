@@ -16,6 +16,12 @@ class RolesView(TemplateView):
 class PublicationsView(TemplateView):
     template_name="cv/publications.html"
 
+class EducationView(TemplateView):
+    template_name="cv/education.html"
+
+class AboutMeView(TemplateView):
+    template_name="cv/about-me.html"
+
 def profiles(request):
     profiles = {
         'repositories' : repositories(),
