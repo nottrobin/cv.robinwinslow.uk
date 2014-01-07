@@ -170,7 +170,7 @@ main nav li {
     padding-bottom: 0.5em;
 }
 
-main p, main ul, main ol, main .list-heading {
+main>p, main>ul, main>ol, main>.list-heading, main>nav {
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
