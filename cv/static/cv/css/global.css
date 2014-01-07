@@ -64,6 +64,9 @@ small {
     opacity: 0.2;
 }
 
+.page-navigation {
+    max-width: none;
+}
 .page-navigation ul {
     padding: 0.5em 1em;
     text-align: center;
