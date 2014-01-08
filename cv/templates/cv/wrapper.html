@@ -28,37 +28,30 @@
         </script>
 
         <link rel="stylesheet" href="{% static 'cv/css/fonts.css' %}" />
+        <link rel="stylesheet" href="{% static 'cv/css/font-awesome.css' %}" />
         <link rel="stylesheet" href="{% static 'cv/css/global.css' %}" />
     </head>
 
     <body>
         <header>
+            <nav class="external-navigation">
+                <ul>
+                    <li><a href="http://robinwinslow.co.uk" class="fa fa-pencil">My blog</a></li>
+                    <li><a href="https://github.com/nottrobin" class="fa fa-github">
+                        Github <small id="js-replace-repos"></small>
+                    </a></li>
+                    <li><a href="http://stackoverflow.com/users/613540/robin-winslow" class="fa fa-stack-exchange">
+                        StackExchange <small id="js-replace-rep"></small>
+                    </a></li>
+                    <li><a href="https://twitter.com/nottrobin" class="fa fa-twitter">Twitter</a></li>
+                </ul>
+            </nav>
+
             <h1 class="email headline">
                 <a href="mailto:robin@robinwinslow.co.uk">
                     <small>robin@</small>robinwinslow.<small>co.uk</small>
                 </a>
             </h1>
-
-            <nav class="external-navigation">
-                <ul>
-                    <li><a href="https://github.com/nottrobin">
-                        <img src="{% static 'cv/images/class-act-octocat.png' %}" alt="Github: social coding" title="Nottrobin on Github" />
-                        <span id="js-replace-repos">Github</span>
-                    </a></li>
-                    <li><a href="http://stackoverflow.com/users/613540/robin-winslow">
-                         <img src="{% static 'cv/images/stackoverflow.png' %}" alt="StackOverflow" title="Nottrobin on StackOverflow" />
-                         <span id="js-replace-rep">StackOverflow</span>
-                    </a></li>
-                    <li><a href="http://robinwinslow.co.uk">
-                        <img src="{% static 'cv/images/jekyll.png' %}" alt="My Jekyll blog" title="My Jekyll blog" />
-                        Blog
-                    </a></li>
-                    <li><a href="https://twitter.com/nottrobin">
-                        <img src="{% static 'cv/images/twitter.png' %}" alt="Twitter" title="Nottrobin on Twitter" />
-                        Twitter
-                    </a></li>
-                </ul>
-            </nav>
 
             <script>
                 getJson(

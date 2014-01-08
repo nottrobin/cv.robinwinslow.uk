@@ -4,7 +4,7 @@ body {
     margin: 0;
 }
 h1 {
-    font-family: "libre baskerville";
+    font-family: "lato";
     text-align: center; 
     margin: 0;
     padding: 0.5em;
@@ -55,14 +55,6 @@ small {
 .site-navigation li a {
     color: white;
 }
-.site-navigation li:not(:first-child):after {
-    content: '|';
-    display: block;
-    left: -0.35em;
-    top: 0.5em;
-    position: absolute;
-    opacity: 0.2;
-}
 
 .page-navigation {
     max-width: none;
@@ -92,8 +84,8 @@ small {
     text-align: center;
     padding: 0.5em;
     font-size: 3em;
-    font-weight: bold;
     box-sizing: border-box;
+    line-height: 1em;
 }
 .headline a {
     color: black;
@@ -132,7 +124,7 @@ main h1 {
 }
 main h1:after {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: -110px;
     content: '';
     display: block;
@@ -143,7 +135,7 @@ main h1:after {
 }
 main h1:before {
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: -110px;
     content: '';
     display: block;
@@ -183,7 +175,7 @@ main>p, main>ul, main>ol, main>.side-heading, main>nav {
 
 .side-heading {
     text-align: left;
-    font-family: 'libre baskerville';
+    font-family: 'lato';
     margin: 1em 0;
 }
 
@@ -220,23 +212,34 @@ footer {
     padding: 1em;
     font-size: 1rem;
     text-align: center;
+    box-shadow: inset 0px 3px 3px -3px rgb(0, 51, 51);
 }
 
+.external-navigation {
+    box-shadow: 0 3px 3px -3px #033;
+    background-color: #eee;
+}
 .external-navigation ul {
     overflow: hidden;
     text-align: center;
-    padding: 0 0 1em 0;
+    min-height: 3.1em;
 }
 .external-navigation li {
     display: inline-block;
     list-style-type: none;
-    padding: 1em;
-    text-align: center;
-    width: 7em;
+    vertical-align: top;
 }
 .external-navigation li a {
+    padding: 0.5em 1em;
     display: block;
     text-decoration: none;
+}
+.external-navigation li a.fa:before {
+    margin-right: 0.3em;
+}
+.external-navigation li small {
+    display: block;
+    margin-top: 0.3em;
 }
 .external-navigation li img {
     display: block;
