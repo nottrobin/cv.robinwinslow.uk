@@ -39,7 +39,7 @@ small {
 }
 
 .site-navigation ul {
-    padding: 0.5em 1em;
+    padding: 0 1em;
     text-align: center;
     background-color: #666;
     color: white;
@@ -50,7 +50,20 @@ small {
     display: inline-block;
     text-transform: lowercase;
     position: relative;
-    padding: 0.5em 0.7em;
+    padding: 1em 0.7em;
+}
+.site-navigation li.current:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    margin-left: -14px;
+    border-color: transparent transparent #eee transparent;
+    border-style: solid;
+    border-width: 0 14px 7px 14px;
 }
 .site-navigation li a {
     color: white;
@@ -58,13 +71,13 @@ small {
 
 .page-navigation {
     max-width: none;
+    background-color: #eee;
 }
 .page-navigation ul {
     padding: 0.5em 1em;
     text-align: center;
     font-size: 0.8em;
     opacity: 0.5;
-    margin-top: 1em;
     max-width: none;
 }
 .page-navigation li {
@@ -73,6 +86,7 @@ small {
     text-transform: lowercase;
     position: relative;
     margin: 0.5em 1em;
+    padding: 0;
 }
 .page-navigation li:before {
     content: '# ';
