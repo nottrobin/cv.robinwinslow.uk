@@ -12,6 +12,23 @@
         {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
         <script>
+            /* Google Analytics */
+            if (location.hostname=="cv.robinwinslow.co.uk") {
+                var _gaq=[
+                    ['_require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js'],
+                    ['_setAccount','UA-2993676-6'],
+                    ['_trackPageview']
+                ];
+                (function() {
+                    var ga = document.createElement('script');
+                    ga.type = 'text/javascript';
+                    ga.async = true;
+                    ga.src = '//www.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+            }
+
+            /* Helper function for fetching a JSON resource */
             function getJson(url, callback)
             {
                 var request = window.ActiveXObject ? new ActiveXObject("Microsoft.XMLHTTP") : new XMLHttpRequest();
@@ -99,7 +116,8 @@
         <footer>
             <aside>
                 <p class="side">Please <a href="http://creativecommons.org/licenses/by-sa/3.0/">copy, modify and reshare</a> my work.</p>
-                <p>By <a href="https://plus.google.com/104026832761488144614" rel="author">Robin Winslow</a></a>
+                <p>By <a href="https://plus.google.com/104026832761488144614" rel="author">Robin Winslow</a>.</p>
+                <p class="github-project"><a href="https://github.com/nottrobin/robinwinslow-cv">Fork this website project on Github</a>.</p>
             </aside>
         </footer>
     </body>

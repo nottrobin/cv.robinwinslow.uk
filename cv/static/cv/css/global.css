@@ -277,3 +277,23 @@ footer {
     float: left;
     padding: 1em;
 }
+
+/* Fork me on Github */
+@media (min-width: 60em) {
+    .github-project {
+        display: none;
+    }
+    .github-project, .github-project a {
+        display: block;
+        position: absolute;
+        background: transparent url("http://i.imgur.com/AXvxumN.png") no-repeat top right;
+        top: 0;
+        right: 0;
+        text-indent: -9000px;
+        border: none;
+        margin: 0;
+        overflow: hidden;
+        width: 149px;
+        height: 148px;
+    }
+}
