@@ -13,6 +13,7 @@ urlpatterns = patterns('',
     url(r'^education/$', cv.views.EducationView.as_view(), name='education'),
     url(r'^about-me/$', cv.views.AboutMeView.as_view(), name='about_me'),
     url(r'^client-side/$', cv.views.ClientSideView.as_view(), name='client_side'),
+    url(r'^server-side/$', cv.views.ServerSideView.as_view(), name='server_side'),
     url(r'^profiles[.]json/$', cv.views.profiles, name='profiles'),
     url(r'^admin/', include(admin.site.urls)),
 )

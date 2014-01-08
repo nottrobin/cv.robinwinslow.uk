@@ -25,6 +25,9 @@ class AboutMeView(TemplateView):
 class ClientSideView(TemplateView):
     template_name="cv/client-side.html"
 
+class ServerSideView(TemplateView):
+    template_name="cv/server-side.html"
+
 def profiles(request):
     profiles = {
         'repositories' : repositories(),
