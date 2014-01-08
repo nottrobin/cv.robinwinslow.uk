@@ -6,7 +6,6 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
     url(
         r'^$',
         cv.views.CvTemplateView.as_view(template_name='cv/index.html'),
@@ -50,6 +49,4 @@ urlpatterns = patterns('',
     ),
 
     url(r'^profiles[.]json/$',cv.views.profiles,name='profiles'),
-
-    url(r'^admin/', include(admin.site.urls)),
 )
