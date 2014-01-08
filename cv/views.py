@@ -9,27 +9,6 @@ import json
 import gzip
 from cv.profiles import repositories, reputation
 
-class HomeView(TemplateView):
-    template_name="cv/index.html"
-
-class RolesView(TemplateView):
-    template_name="cv/roles.html"
-
-class PublicationsView(TemplateView):
-    template_name="cv/publications.html"
-
-class EducationView(TemplateView):
-    template_name="cv/education.html"
-
-class AboutMeView(TemplateView):
-    template_name="cv/about-me.html"
-
-class ClientSideView(TemplateView):
-    template_name="cv/client-side.html"
-
-class ServerSideView(TemplateView):
-    template_name="cv/server-side.html"
-
 class CvTemplateView(TemplateView):
     def get_context_data(self):
         name_classes = {}
