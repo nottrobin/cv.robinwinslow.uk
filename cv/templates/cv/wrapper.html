@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
        
-        <title>{% block title %}{% endblock %} | Robin Winslow</title>
+        <title>{% block title %}{% endblock %} | Robin Winslow's CV</title>
         
         {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
@@ -94,11 +94,11 @@
                 <li class="{{ name_classes.education }}">
                     <a href="{% url 'education' %}">Education</a>
                 </li>
-                <li class="{{ name_classes.client_side }}">
-                    <a href="{% url 'client_side' %}">Client-side skills</a>
-                </li>
                 <li class="{{ name_classes.server_side }}">
                     <a href="{% url 'server_side' %}">Server-side skills</a>
+                </li>
+                <li class="{{ name_classes.client_side }}">
+                    <a href="{% url 'client_side' %}">Client-side skills</a>
                 </li>
                 <li class="{{ name_classes.publications }}">
                     <a href="{% url 'publications' %}">Publications</a>
