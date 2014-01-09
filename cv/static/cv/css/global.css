@@ -355,6 +355,13 @@ footer {
 .profile-image {
     max-width: 15em;
     float: right;
+    display: block;
     margin-left: 2em;
     margin-bottom: 1em;
+}
+@media (max-width: 42em) {
+    .profile-image {
+        float: none;
+        margin: 0 auto 1em auto;
+    }
 }
