@@ -65,6 +65,11 @@ small {
     border-style: solid;
     border-width: 0 14px 7px 14px;
 }
+@media (max-width: 68em) {
+    .site-navigation li.current:after {
+        display: none;
+    }
+}
 .site-navigation li a {
     color: white;
 }
@@ -109,14 +114,21 @@ small {
     font-size: 0.4em;
     color: #366;
 }
-@media (max-width: 48rem) {
-    .headline a small {
-        display: none;
+
+@media (max-width: 40rem) {
+    .headline {
+        font-size: 2.5em;
     }
 }
-@media (max-width: 35rem) {
+@media (max-width: 32rem) {
     .headline {
         font-size: 2em;
+    }
+}
+@media (max-width: 26rem) {
+    .headline small {
+        display: block;
+        line-height: 1.4em;
     }
 }
 @media (max-width: 15rem) {
@@ -157,6 +169,12 @@ main h1:before {
     height: 2px;
     background-color: #666;
     box-shadow: inset -80px 0 50px -50px white, inset 80px 0 50px -50px white;
+}
+
+@media (max-width: 44rem) {
+    main h1:before, main h1:after {
+        display: none;
+    }
 }
 
 main nav, main p, main ul, main ol {
@@ -273,6 +291,20 @@ footer {
     width: 3em;
 }
 
+@media (max-width: 46em) {
+    .external-navigation ul { min-height: none; }
+    .external-navigation li small {
+        display: none;
+    }
+}
+@media (max-width: 26em) {
+    .external-navigation ul li a {
+        width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
 .date-list .date {
     display: inline-block;
     width: 6em;
@@ -317,4 +349,10 @@ footer {
         width: 149px;
         height: 148px;
     }
+}
+.profile-image {
+    max-width: 15em;
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 1em;
 }
