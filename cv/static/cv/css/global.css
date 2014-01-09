@@ -101,18 +101,9 @@ small {
 .headline {
     text-transform: lowercase;
     text-align: center;
-    padding: 0.5em;
+    padding: 0 0.2em;
     font-size: 3em;
-    box-sizing: border-box;
     line-height: 1em;
-}
-.headline a {
-    color: black;
-}
-.headline a small {
-    opacity: 0.5;
-    font-size: 0.4em;
-    color: #366;
 }
 
 @media (max-width: 40rem) {
@@ -125,15 +116,34 @@ small {
         font-size: 2em;
     }
 }
-@media (max-width: 26rem) {
-    .headline small {
-        display: block;
-        line-height: 1.4em;
-    }
-}
 @media (max-width: 15rem) {
     .headline {
         font-size: 1.5em;
+    }
+}
+
+.contact-navigation {
+    font-family: lato;
+    text-align: center;
+    padding: 0.5em 0.5em 0 0.5em;
+    margin-bottom: 1.5em;
+}
+.contact-navigation li {
+    display: inline-block;
+    position: relative;
+}
+.contact-navigation li:not(:last-child):after {
+    display: inline-block;
+    margin: 0 0.25em;
+    content: '|';
+    color: #333;
+}
+@media (max-width: 30em) {
+    .contact-navigation li {
+        display: block;
+    }
+    .contact-navigation li:not(:last-child):after {
+        display: none;
     }
 }
 
@@ -266,6 +276,7 @@ footer {
 .external-navigation {
     box-shadow: 0 3px 3px -3px #033;
     background-color: #eee;
+    margin-bottom: 1.5em;
 }
 .external-navigation ul {
     overflow: hidden;
