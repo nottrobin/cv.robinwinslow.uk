@@ -183,8 +183,9 @@ main nav, main p, main ul, main ol {
 
 main h2 {
     font-weight: normal;
-    font-size: 1.2em;
-    margin-top: 0;
+    font-family: 'lato';
+    font-size: 1em;
+    margin-top: 0.5em;
 }
 
 main nav small {
@@ -205,7 +206,8 @@ main>p, main>ul, main>ol, main>.side-heading, main>nav {
     padding-right: 1em;
 }
 main h2.side-heading {
-    max-width:33.5em;
+    font-size: 1.2em;
+    max-width: 33.5em;
 }
 
 .side-heading {
