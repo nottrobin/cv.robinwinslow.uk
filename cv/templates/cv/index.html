@@ -1,6 +1,6 @@
 {% extends "cv/wrapper.html" %}
 
-{% block title %}My CV{% endblock %}
+{% block title %}I'm a web developer{% endblock %}
 
 {% block content %}
 
@@ -52,7 +52,40 @@
         </ul>
     </nav>
 
-    <p class="summary">My BSc in Computer Science was where I <a href="http://robinwinslow.co.uk/2013/05/30/why-i-love-the-internet/">fell in love with the internet</a>. My MSc in Interactive Systems Design taught me to see the wider systemic issues surrounding most technical problems, and made me interested in usability and the human experience in all areas of web development. My Inviqa training course taught me so much about writing maintainable code.</p>
+    <p class="summary">My BSc in Computer Science was where I <a href="http://robinwinslow.co.uk/2013/05/30/why-i-love-the-internet/">fell in love with the internet</a>. My MSc in Interactive Systems Design taught me to see the wider systemic issues surrounding most technical problems, and made me interested in usability and the human experience in all areas of web development. My Inviqa training course gave me invaluable insight into writing maintainable code.</p>
+</section>
+
+<section id="server-side">
+    <div class="section-title"><h1>Server-side skills</h1></div>
+
+    <nav class="topic-navigation">
+        <ul>
+            <li>
+                <a href="{% url 'server_side' %}#languages">Languages</a>
+                <small>
+                    (
+                        <a href="{% url 'server_side' %}#php">PHP</a>,
+                        <a href="{% url 'server_side' %}#c-sharp">C#</a>,
+                        <a href="{% url 'server_side' %}#python">Python</a>,
+                        <a href="{% url 'server_side' %}#other-languages">Others</a>
+                    )
+                </small>
+            </li>
+            <li>
+                <a href="{% url 'server_side' %}#version-control">Version control</a>
+                <small>( git, subversion )</small>
+            </li>
+            <li>
+                <a href="{% url 'server_side' %}#databases">Databases</a>
+                <small>( MySQL, PostgreSQL, SQL Server )</small>
+            </li>
+            <li>
+                <a href="{% url 'server_side' %}#devops-amp-continuous-integration">DevOps &amp continuous integration</a>  
+            </li>
+        </ul>
+    </nav>
+
+    <p class="summary">I have 5 years of experience writing and maintaining application in PHP, and I have valuable experience in C# and Python. I always strive to write <a href="http://robinwinslow.co.uk/2013/11/22/expressive-coding/">expressive</a> and <a href="http://robinwinslow.co.uk/2014/01/08/general-coding-guidelines/">well architected</a> code. I have significant experience in <a href="http://en.wikipedia.org/wiki/Devops">DevOps</a>, having setup and maintained many different server configurations and worked closely with system administrators. I have also setup various version control and continuous intergration systems.</p>
 </section>
 
 <section id="client-side">
@@ -101,23 +134,33 @@
     <p class="summary">I like writing and giving presentations. I have given several presentations about web technologies, including one to over 100 people. I presented on sociological topics as part of my MSc, and I have published a journal article. I also have a blog.</p>
 </section>
 
-<section id="server-side">
-    <div class="section-title"><h1>Server-side skills</h1></div>
+<section id="leading-a-team">
+    <div class="section-title"><h1>Leading a team</h1></div>
 
-    <nav class="topic-navigation">
+    <p>I am a big fan of [Agile philosophy](http://localhost:9292/2014/01/10/agile-philosophy/), skills-sharing and fostering a no-blame culture. I think the main role of a leader is to encourage practices that foster these goals, like morning [stand-ups](http://en.wikipedia.org/wiki/Stand-up_meeting), demonstrations, [code reviews](https://en.wikipedia.org/wiki/Code_review) and regular skill-sharing workshops, and to encourage respect, discussion and open-mindedness to new ideas throughout.</p>
+
+    <p>I also think that a leader's ultimate goal is to make to reach the point where leadership is unnecessary; where the team embody the values and practices necessary to be sustainably productive.</p>
+
+    <p>For a team to lose a developer is massively costly to any organisation, and it sets back the team's evolution significantly. Therefore, it is very much worthwhile investing in the team, and proving flexibility to work around the team members' lives, to keep them happy and satisfied so they will stay with the team.</p>
+
+    <nav class="examples-navigation">
         <ul>
-            <li>PHP <small>(Symfony, Zend, CodeIgniter, Magento)</small></li>
-            <li>Python <small>(Django)</small></li>
-            <li>C# <small>(Umbraco, MCV3)</small></li>
-            <li>Ruby <small>(Jekyll)</small>
-            <li>Perl <small>(Catalyst)</small></li>
-            <li>Version control <small>(git, subversion)</small></li>
-            <li>DevOps <small>(Heroku, Debian, CentOS, Apache, Nginx)</small></li>
-            <li>Continuous integration <small>(Jenkins, Travis)</small></li>
+            <li>
+                <a href="http://programmers.stackexchange.com/questions/166570/programming-vs-planning/166591#166591">
+                    Programming vs. planning
+                </a>
+
+                <small>(answer @ Programmers)</small>
+            </li>
+            <li>
+                <a href="http://localhost:9292/2014/01/10/agile-philosophy/">
+                    Agile philosophy
+                </a>
+
+                <small>(article @ my blog)</small>
+            </li>
         </ul>
     </nav>
-
-    <p class="summary">I have experience of many server-side languages, and have extensive experience architecting code. I have setup version control systems and strategies, and I have good knowledge of design patterns and test-driven developement. I also have a lot of experience with managing servers, and using various hosting services.</p>
 </section>
 
 <section id="sites">
