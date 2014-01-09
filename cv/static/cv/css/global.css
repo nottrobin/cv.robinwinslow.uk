@@ -297,7 +297,7 @@ footer {
 }
 
 @media (max-width: 46em) {
-    .external-navigation ul { min-height: none; }
+    .external-navigation ul { min-height: 0; }
     .external-navigation li small {
         display: none;
     }
