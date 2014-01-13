@@ -385,7 +385,7 @@ footer {
         font-size: 1em;
     }
 
-    .external-navigation, .page-navigation, .site-navigation li:not(.current) {
+    .external-navigation, .page-navigation, .site-navigation li:not(.current), footer {
         display: none;
     }
 }
