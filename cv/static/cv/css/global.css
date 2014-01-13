@@ -379,3 +379,13 @@ footer {
         margin: 0 auto 1em auto;
     }
 }
+
+@media print {
+    body {
+        font-size: 1em;
+    }
+
+    .external-navigation, .page-navigation, .site-navigation li:not(.current) {
+        display: none;
+    }
+}
