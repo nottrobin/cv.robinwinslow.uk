@@ -38,6 +38,9 @@ small {
     text-transform: lowercase;
 }
 
+.site-navigation {
+    margin-top: 1em;
+}
 .site-navigation ul {
     padding: 0.5em 1em;
     text-align: center;
@@ -126,7 +129,7 @@ small {
     font-family: lato;
     text-align: center;
     padding: 0.5em 0.5em 0 0.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
 }
 .contact-navigation li {
     display: inline-block;
@@ -346,6 +349,16 @@ footer {
     margin: 0 auto 0.5em auto;
     margin-bottom: 0.5em;
     border-top: 1px solid rgba(100,100,100,0.1);
+}
+
+.notice {
+    color: #960;
+    text-align: center;
+}
+
+.muted {
+    opacity: 0.4;
+    font-size: 0.8em;
 }
 
 /* Fork me on Github */
