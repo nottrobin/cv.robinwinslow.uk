@@ -1,0 +1,438 @@
+body {
+    font-family: "source sans pro";
+    font-size: 1.4em;
+    margin: 0;
+}
+h1 {
+    font-family: "lato";
+    text-align: center; 
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+header {
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+}
+
+a {
+    color: #366;
+    text-decoration: none;
+}
+
+small {
+    opacity: 0.5;
+    font-size: 0.8em;
+    text-transform: lowercase;
+}
+
+.site-navigation {
+    margin-top: 1em;
+}
+.site-navigation ul {
+    padding: 0.5em 1em;
+    text-align: center;
+    background-color: #666;
+    color: white;
+    box-shadow: inset 0 3px 3px -3px #033, inset 0 -3px 3px -3px #033;
+}
+.site-navigation li {
+    list-style-type: none;
+    display: inline-block;
+    text-transform: lowercase;
+    position: relative;
+    padding: 0.5em 0.7em;
+}
+.site-navigation li.current:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    left: 50%;
+    bottom: -0.5em;
+    margin-left: -14px;
+    border-color: transparent transparent #eee transparent;
+    border-style: solid;
+    border-width: 0 14px 7px 14px;
+}
+@media (max-width: 68em) {
+    .site-navigation li.current:after {
+        display: none;
+    }
+}
+.site-navigation li a {
+    color: white;
+}
+
+.page-navigation {
+    max-width: none;
+    background-color: #eee;
+}
+.page-navigation ul {
+    padding: 0.5em 1em;
+    text-align: center;
+    font-size: 0.8em;
+    opacity: 0.5;
+    max-width: none;
+}
+.page-navigation li {
+    list-style-type: none;
+    display: inline-block;
+    text-transform: lowercase;
+    position: relative;
+    margin: 0.5em 1em;
+    padding: 0;
+}
+.page-navigation li:before {
+    content: '# ';
+    opacity: 0.2;
+}
+
+.headline {
+    text-transform: lowercase;
+    text-align: center;
+    padding: 0 0.2em;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+@media (max-width: 40rem) {
+    .headline {
+        font-size: 2.5em;
+    }
+}
+@media (max-width: 32rem) {
+    .headline {
+        font-size: 2em;
+    }
+}
+@media (max-width: 15rem) {
+    .headline {
+        font-size: 1.5em;
+    }
+}
+
+.contact-navigation {
+    font-family: lato;
+    text-align: center;
+    padding: 0.5em 0.5em 0 0.5em;
+    margin-bottom: 0.5em;
+}
+.contact-navigation li {
+    display: inline-block;
+    position: relative;
+}
+.contact-navigation li:not(:last-child):after {
+    display: inline-block;
+    margin: 0 0.25em;
+    content: ' | ';
+    color: #333;
+}
+@media (max-width: 30em) {
+    .contact-navigation li {
+        display: block;
+    }
+    .contact-navigation li:not(:last-child):after {
+        display: none;
+    }
+}
+
+main {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+main h1 {
+    margin-top: 1em;
+    display: inline-block;
+    position: relative;
+    clear: both;
+}
+main h1:after {
+    position: absolute;
+    top: 55%;
+    left: -110px;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #666;
+    box-shadow: inset -80px 0 50px -50px white, inset 80px 0 50px -50px white;
+}
+main h1:before {
+    position: absolute;
+    top: 55%;
+    right: -110px;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #666;
+    box-shadow: inset -80px 0 50px -50px white, inset 80px 0 50px -50px white;
+}
+
+@media (max-width: 44rem) {
+    main h1:before, main h1:after {
+        display: none;
+    }
+}
+
+main nav, main p, main ul, main ol {
+    text-align: left;
+}
+
+main h2 {
+    font-weight: normal;
+    font-family: 'lato';
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+main nav small {
+    display: inline-block;
+}
+main nav.date-list small.date {
+    display: inline;   
+}
+main nav li {
+    padding-bottom: 0.5em;
+}
+
+main>p, main>ul, main>ol, main>.side-heading, main>nav {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+main h2.side-heading {
+    font-size: 1.2em;
+    max-width: 33.5em;
+}
+
+.side-heading {
+    text-align: left;
+    font-family: 'lato';
+    margin: 0.5em 0;
+}
+.side-heading:before {
+    content: '';
+    display: block;
+    height: 0;
+    width: auto;
+    margin-bottom: 1em;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+section {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 50em;
+}
+section .summary, section .topic-navigation, section p {
+    padding: 1em;
+    margin: 0;
+}
+section .examples-navigation {
+    padding: 0 1em;
+}
+section .topic-navigation {
+    min-width: 10em;
+    margin-right: 1em;
+}
+section .summary {
+    max-width: none;
+}
+section:nth-child(odd) .topic-navigation { float: right; }
+section:nth-child(even) .topic-navigation { float: left; }
+
+@media (max-width: 46em) {
+    section .topic-navigation,
+    section:nth-child(odd) .topic-navigation,
+    section:nth-child(even) .topic-navigation {
+        float: none;
+        margin-right: 0;
+    }
+}
+
+footer {
+    background-color: #eee;
+    overflow: hidden;
+    padding: 1em;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: inset 0px 3px 3px -3px rgb(0, 51, 51);
+}
+
+.external-navigation {
+    box-shadow: 0 3px 3px -3px #033;
+    background-color: #eee;
+    margin-bottom: 1.5em;
+}
+.external-navigation ul {
+    overflow: hidden;
+    text-align: center;
+    min-height: 3.1em;
+}
+.external-navigation li {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: top;
+}
+.external-navigation li a {
+    padding: 0.5em 1em;
+    display: block;
+    text-decoration: none;
+}
+.external-navigation li a.fa:before {
+    margin-right: 0.3em;
+}
+.external-navigation li small {
+    display: block;
+    margin-top: 0.3em;
+}
+.external-navigation li img {
+    display: block;
+    clear: both;
+    margin: 0 auto 0.5em auto;
+    width: 3em;
+}
+
+@media (max-width: 46em) {
+    .external-navigation ul { min-height: 0; }
+    .external-navigation li small {
+        display: none;
+    }
+}
+@media (max-width: 26em) {
+    .external-navigation ul li a {
+        width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+.date-list .date {
+    display: inline-block;
+    width: 6em;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+.block-navigation li {
+    min-width: 10em;
+    width: 25%;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    float: left;
+    padding: 1em;
+}
+
+.examples-navigation:before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 95%;
+    margin: 0 auto 0.5em auto;
+    margin-bottom: 0.5em;
+    border-top: 1px solid rgba(100,100,100,0.1);
+}
+
+.notice {
+    color: #960;
+    text-align: center;
+}
+
+.muted {
+    opacity: 0.4;
+    font-size: 0.8em;
+}
+
+/* Fork me on Github */
+@media (min-width: 60em) {
+    .github-project {
+        display: none;
+    }
+    .github-project, .github-project a {
+        display: block;
+        position: absolute;
+        background: transparent url("http://i.imgur.com/AXvxumN.png") no-repeat top right;
+        top: 0;
+        right: 0;
+        text-indent: -9000px;
+        border: none;
+        margin: 0;
+        overflow: hidden;
+        width: 149px;
+        height: 148px;
+    }
+}
+.profile-image {
+    max-width: 15em;
+    float: right;
+    display: block;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+@media (max-width: 42em) {
+    .profile-image {
+        float: none;
+        margin: 0 auto 1em auto;
+    }
+}
+
+@media print {
+    body {
+        font-size: 0.8em;
+    }
+
+    .external-navigation, .page-navigation, .site-navigation li:not(.current), footer {
+        display: none;
+    }
+
+    .site-navigation ul {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .site-navigation li a {
+        color: black;
+    }
+
+    .contact-navigation {
+        margin-bottom: 0;
+    }
+
+    section .summary,
+    section:nth-child(odd) .topic-navigation,
+    section:nth-child(even) .topic-navigation {
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+        margin: 0;
+    }
+    section .summary {
+        width: 65%;
+    }
+    section:nth-child(odd) .topic-navigation,
+    section:nth-child(even) .topic-navigation {
+        width: 35%;
+        float: right;
+    }
+
+    main h1 {
+        margin-top: 0;
+        clear: both;
+    }
+}

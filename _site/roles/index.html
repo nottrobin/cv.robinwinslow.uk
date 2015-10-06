@@ -1,0 +1,192 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Recent roles | Robin Winslow's CV</title>
+
+        <meta name="description" content="I'm Robin Winslow, a web developer. Here are my recent roles.">
+
+        <script>
+            /* Google Analytics */
+            var _gaq=[
+                ['_require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js'],
+                ['_setAccount','UA-2993676-6'],
+                ['_trackPageview']
+            ];
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = '//www.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+            /* Helper function for fetching a JSON resource */
+            function getJson(url, callback)
+            {
+                var request = window.ActiveXObject ? new ActiveXObject("Microsoft.XMLHTTP") : new XMLHttpRequest();
+
+                request.onreadystatechange = function() {
+                    if (request.readyState === 4) {
+                        callback(request.responseText);
+                    }
+                }
+
+                request.open('GET', url, true)
+                request.send()
+            }
+        </script>
+
+        <!--[if !(lte IE 8)]><!-->
+        <script type="text/javascript">
+           (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+        </script>
+        <!--<![endif]-->
+
+        <link rel="icon" href="http://i.imgur.com/cGGLMfO.png" type="image/png" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        <link rel="stylesheet" href="/css/font-awesome.css" />
+        <link rel="stylesheet" href="/css/global.css" />
+    </head>
+
+    <body>
+        <header class="vcard">
+            <nav class="external-navigation">
+                <ul>
+                    <li><a href="http://robinwinslow.co.uk" class="fa fa-pencil">My blog</a></li>
+                    <li><a href="https://github.com/nottrobin" class="fa fa-github">
+                        Github <small id="js-replace-repos"></small>
+                    </a></li>
+                    <li><a href="http://stackexchange.com/users/304176/robin-winslow" class="fa fa-stack-exchange">
+                        StackExchange <small id="js-replace-rep"></small>
+                    </a></li>
+                    <li><a href="https://twitter.com/nottrobin" class="fa fa-twitter">Twitter</a></li>
+                </ul>
+            </nav>
+
+            <h1 class="email headline fn n">
+                <span class="given-name">Robin</span>
+                <span class="family-name">Winslow</span>
+            </h1>
+
+            <nav class="contact-navigation muted">
+                <ul>
+                    <li>
+                        <a href="mailto:robin@robinwinslow.co.uk" class="email">robin@robinwinslow.co.uk</a>
+                    </li>
+                    <li>
+                        <a href="tel:07795070704" class="tel">07795070704</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="current-role" class="notice">
+                <p>On <time datetime="2014-03-12">12th March 2014</time> I started <a href="http://design.canonical.com/author/nottrobin/">my new job</a> in <a href="http://www.canonical.com/">Canonical</a>'s <a href="http://design.canonical.com/team/">design team</a>.<br/>I am therefore <strong>no longer looking for new opportunities</strong>.</p>
+            </section>
+
+            <script>
+                getJson(
+                    'https://api.github.com/users/nottrobin?client_id=4cfe6965dc7e3dadaf3f&client_secret=f1e5bf0d3fc92dc6503d1869e9e2ed10ee8a6faa',
+                    function(githubJson) {
+                        var githubInfo = JSON ? JSON.parse(githubJson) : eval('(' + githubJson + ')');
+
+                        document.getElementById('js-replace-repos').innerHTML = githubInfo.public_repos + ' repos';
+                    }
+                );
+                getJson(
+                    'https://api.stackexchange.com/2.2/users/613540/?site=stackoverflow',
+                    function(stackoverflowJson) {
+                        var stackoverflowInfo = JSON ? JSON.parse(stackoverflowJson) : eval('(' + stackoverflowJson + ')');
+
+                        document.getElementById('js-replace-rep').innerHTML = stackoverflowInfo.items[0].reputation + ' reputation';
+                    }
+                );
+            </script>
+        </header>
+
+        <nav class="site-navigation">
+            <ul>
+                <li class="nav-home">
+                    <a href="/">Summary</a>
+                </li>
+                <li class="nav-roles">
+                    <a href="/roles/">Recent roles</a>
+                </li>
+                <li class="nav-education">
+                    <a href="/education/">Education</a>
+                </li>
+                <li class="nav-server-side">
+                    <a href="/server-side/">Server-side skills</a>
+                </li>
+                <li class="nav-client-side">
+                    <a href="/client-side/">Client-side skills</a>
+                </li>
+                <li class="nav-publications">
+                    <a href="/publications/">Publications</a>
+                </li>
+                <li class="nav-about-me">
+                    <a href="/about-me/">About me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+        <nav class="page-navigation">
+    <ul>
+        <li><a href="#lead-developer">Lead developer</a></li>
+        <li><a href="#full-stack-developer">Full-stack developer</a></li>
+        <li><a href="#previous-roles">Previous roles</a></li>
+    </ul>
+</nav>
+
+<h1 id="lead-developer">Lead developer</h1>
+
+<h2 id="hillaryshttpwwwhillaryscouk----august-2012"><a href="http://www.hillarys.co.uk">Hillarys</a> - August 2012</h2>
+
+<p>The development team was fairly new when I arrived at Hillarys, consisting of only two developers. I was brought in to lead and develop a modern development team. The team has since grown with the addition of another senior developer.</p>
+
+<p>I advised the team to use <a href="http://git-scm.com/">Git</a> as our version control system, trained the team in its use, and migrated all existing repositories to <a href="https://github.com/Hillarys/">Github</a>. I helped to train the junior developer in version control, server-management and object-oriented programming. I also <a href="http://robinwinslow.co.uk/2014/01/10/agile-philosophy/">suggested</a> and implemented morning standups, sprints and planning meetings which are now invaluable team practices.</p>
+
+<p>I learned C# so that I could architect and lead the rebuild of <a href="http://www.arena-blinds.com">Arena</a>. I also made the site (somewhat) responsive at the same time. This project has now become the basis for two more site rebuilds.</p>
+
+<p>My most important role has been to oversee the migration of <a href="http://web-blinds.com">Web-blinds</a> (8k daily visitors) to being supported in-house. This involved restructuring the repository, recreating the build system and doing considerable maintenance work on the server, alongside a large new international project on the site.</p>
+
+<h1 id="full-stack-developer">Full-stack developer</h1>
+
+<h2 id="ipc-mediahttpwwwipcmediacom----january-2011"><a href="http://www.ipcmedia.com">IPC Media</a> - January 2011</h2>
+
+<p>I was a key member of a small team responsible for <a href="http://countrylife.co.uk">Countrylife</a>, <a href="http://horseandhound.co.uk">Horse and Hound</a>, <a href="http://golf-monthly.co.uk">Golf Monthly</a> and <a href="http://shootinguk.co.uk">Shooting UK</a>, within a large department comprising over 40 developers.</p>
+
+<p>The expertise and experience of the developers at IPC created a wonderful environment for me to learn about full-stack development and the management of large-scale websites. I became very interested in agile project management strategies, web performance, continuous integration, design patterns and behaviour-driven development.</p>
+
+<p>I also learned a lot about <a href="http://robinwinslow.co.uk/2014/01/10/agile-philosophy/">agile project management techniques</a>, and participated in many decisions about new features and prioritisation of work.</p>
+
+<p>I was central to a semi-responsive redesign of <a href="http://countrylife.co.uk">Countrylife</a>, which is still the current design of the site. I maintained and wrote new Symfony modules, and helped to develop our build and continuous integration systems for all our sites.</p>
+
+<p>I also gave two <a href="/publications#html5-and-how-to-use-it-smallpresentationsmall">presentations</a> on new technologies to the department.</p>
+
+<h1 id="previous-roles">Previous roles</h1>
+
+<h2 id="energisehttpwwwenergiseconsultingcom-mokorohttpwwwmokorocouk-tamarhttpwwwtamarcom----until-2010"><a href="http://www.energiseconsulting.com/">Energise</a>, <a href="http://www.mokoro.co.uk/">Mokoro</a>, <a href="http://www.tamar.com/">Tamar</a> - until 2010</h2>
+
+<p>During my MSc I advised Energise on a large-scale web project, and built the bulk of the solution in CodeIgniter. I also advised Mokoro on redesigning their intranet for use by their consultants all over the world, and helped build the solution in Drupal.</p>
+
+<p>During my MSc and BSc and during my year in industry I worked for Tamar.com. I was a member of a small team working on large perl projects and ongoing maintenance on ecommerce websites for financial institutions like <a href="http://endsleigh.co.uk">Endsleigh</a> and online retailers like <a href="http://dreams.co.uk">Dreams</a>.</p>
+
+<p>Tamar was where I started to learn about front-end technologies. I became their CSS expert, and I led JavaScript development and helped develop a new JavaScript library. I also adapted and improved their existing bespoke Perl framework and learned to use Catalyst.</p>
+
+        </main>
+
+        <footer>
+            <aside>
+                <p class="side">Please <a href="http://creativecommons.org/licenses/by-sa/3.0/">copy, modify and reshare</a> my work.</p>
+                <p>By <a href="https://plus.google.com/104026832761488144614" rel="author">Robin Winslow</a>.</p>
+                <p class="github-project"><a href="https://github.com/nottrobin/robinwinslow-cv">Fork this website project on Github</a>.</p>
+            </aside>
+        </footer>
+    </body>
+</html>

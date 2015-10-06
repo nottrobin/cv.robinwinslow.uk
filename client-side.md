@@ -1,0 +1,146 @@
+---
+layout: default
+title: "Client-side skills"
+description: "I'm Robin Winslow, a web developer. These are my client-side skills."
+---
+
+<nav class="page-navigation">
+    <ul>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#responsive-design">Responsive design</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+        <li><a href="#performance">Performance</a></li>
+        <li><a href="#usability">Usability</a></li>
+    </ul>
+</nav>
+
+HTML
+===
+
+Every developer knows how to write HTML, but I care deeply about writing semantic markup. It is the language of the web, and therefore the language in which the large majority of the information available to humanity is now written. For this reason, writing clear HTML is fantastically important.
+
+HTML elements should be used to assign semantic meaning to areas in a document, rather than as handles for code. This has been made vastly easier with the addition of [new semantic elements](http://html5doctor.com/lets-talk-about-semantics/), and the removal of [some complexities](http://demosthenes.info/blog/251/The-Differences-Between-HTML5-And-What-You-Know#html5-simplification) in HTML5.
+
+Writers of HTML should try as far as possible to avoid using any elements that don't add semantic meaning. Rendering of complex layouts should be done by the CSS wherever possible (and, if necessary, JavaScript). We should also avoid adding inline styles or script tags to keep the HTML clean.
+
+I am so very glad that the [W3C](http://www.w3.org/) are moving away from strict standardisation of HTML, with the HTML5 spec being much more flexible than previous specs. HTML needs to be as quick, easy and forgiving to write as possible.
+
+Writing expressive, semantic and clean HTML will not only significantly ease maintenance, but will encourage overall simpler designs and architectures, and be inherently more accessible and better for [SEO](http://en.wikipedia.org/wiki/Search_engine_optimization).
+
+<nav class="examples-navigation">
+    <ul>
+        <li><a href="https://github.com/nottrobin/semantic-design/blob/master/index.html">Semantic design</a> <small>(code @ Github)</small></li>
+    </ul>
+</nav>
+
+CSS
+===
+
+I was first trained in CSS at Tamar in 2005, and have eagerly taken ownership over many CSS projects in every job since then.
+
+I have a deep understanding of the layout models of modern browsers, and I'm experienced in recreating simple and complex designs with straightforward CSS. I apply the [CSSLint rules](https://github.com/stubbornella/csslint/wiki/Rules) and I use the principles behind [OOCSS](http://oocss.org/) and [SMACSS](http://smacss.com/) to write maintainable and modular CSS.
+
+I have experience using [SASS](http://sass-lang.com/) (and [LESS]( http://lesscss.org/ )) to help keep CSS code [DRY](http://en.wikipedia.org/wiki/Don%27t_Repeat_Yourself) and structured.
+
+I am a big fan of [progressive enhancement](http://en.wikipedia.org/wiki/Progressive_enhancement), and I will always choose it as a solution over having to target styling rules at specific browsers. Simplicity is the key to responsive design.
+
+I believe that in writing CSS it's important to embrace flexibility, to allow the page to respond natively to different browsers and devices. For example, I prefer to base my font sizes on the device's default size, rather than specifying an absolute font-size, and I tend to use `max-width` rather than `width` to allow the design to respond to the device width.
+
+<nav class="examples-navigation">
+    <ul>
+        <li><a href="http://stackoverflow.com/questions/12279544/which-css-selectors-or-rules-can-significantly-effect-front-end-layout-renderi">CSS Performance</a> <small>(question @ StackOverflow)</small></li>
+        <li><a href="http://stackoverflow.com/questions/7141874/detecting-whether-theres-overflow-or-not-without-javascript/7142067#7142067">Show/hide button with CSS</a> <small>(answer @ StackOverflow)</small></li>
+        <li><a href="http://stackoverflow.com/questions/12272047/css3-selector-for-not-a-and-not-b/12272090#12272090">Not A and Not B selector</a> <small>(answer @ StackOverflow)</small></li>
+        <li><a href="https://github.com/nottrobin/robin-blog/tree/master/_scss">SASS (SCSS) for my blog</a> <small>(code @ Github)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2012/03/13/css-best-practice-tips/">CSS best practice tips</a> <small>(article @ my blog)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2012/11/16/sass-just-became-feasible/">Sass just became feasible</a> <small>(article @ my blog)</small></li>
+    </ul>
+</nav>
+
+Responsive design
+===
+
+I am a big fan of [responsive design](http://en.wikipedia.org/wiki/Responsive_design), which to me goes hand in hand with progressive enhancement as an invaluable principle that should be applied to all front-end projects. With the number of different devices of all sizes and capabilities growing far more rapidly than we could possibly keep track of, it is paramount to write front-end code to be as flexible as possible.
+
+Although I've never worked on a "responsive project", by writing simple and flexible CSS, I have made a number of design projects responsive by default, even though responsiveness was not in the plan.
+
+Ideally, new projects would be designed and implemented "[mobile first](http://designshack.net/articles/css/mobilefirst/)", firstly to keep the project focused on the really important elements of each page, and secondly so that extraneous content doesn't even get sent to a small device, which probably has a slower internet connection. I am very much looking forward to working on my first mobile first project, hopefully in the near future.
+
+<nav class="examples-navigation">
+    <ul>
+        <li>
+            <a href="http://www.arena-blinds.com/">Arena-Blinds.com</a>
+            <small>
+                (responsive website @
+                <a href="/roles/#lead-developer">Hillarys</a>)
+            </small>
+        </li>
+        <li>
+            <a href="http://semantic-design.herokuapp.com/">Semantic design</a>
+            <small>(responsive website @ Heroku)</small>
+        </li>
+        <li>
+            <a href="https://github.com/nottrobin/semantic-design/blob/master/basic.css">Semantic design CSS</a>
+            <small>(code @ Github)</small>
+        </li>
+    </ul>
+</nav>
+
+JavaScript
+===
+
+I learned JavaScript basics during my Computer Science BSc, but I first put it into practice at Tamar in 2005, eventually becoming their principal JavaScript expert and creating a large JavaScript library.
+
+I understand JavaScript's [functional](http://en.wikipedia.org/wiki/Functional_programming) roots, its [prototype-based model](http://en.wikipedia.org/wiki/Prototype-based_programming) and I am experienced in [event-driven programming](http://en.wikipedia.org/wiki/Event-based_programming). I know how to use closures, and encapsulate code in a function to prevent it polluting the global space, and I am familiar with Douglas Crockford's [JavaScript code conventions](http://javascript.crockford.com/code.html).
+
+I have used JavaScript extensively in every job since then, and have created modules in [jQuery](http://jquery.com/), [YUI](http://yuilibrary.com/) and [MooTools](http://mootools.net/). I like to write well-structured and [expressive](http://robinwinslow.co.uk/2013/11/22/expressive-coding/) JavaScript, and I'm a big fan of [backbone](http://backbonejs.org/) and [require.js](http://requirejs.org/) (or, indeed, any AMD implementation).
+
+Having said all that, I also believe that JavaScript should only be used where appropriate. In a traditional website, JavaScript should only be the sugar on top. As much of the functionality as possible should be provided through traditional HTML, CSS and native browser functionality. Where functionality is supported natively by the browser (e.g. [HTML5 input fields](http://www.hongkiat.com/blog/html5-form-input-type/), [form validation](http://diveintohtml5.info/forms.html#validation), `<video>`) this should be used in preference to custom JavaScript. This will lead to a more stable, maintainable and accessible website.
+
+<nav class="examples-navigation">
+    <ul>
+        <li><a href="http://stackoverflow.com/questions/7058148/is-it-correct-that-json-stringify2-2-may-return-false/7058563#7058563">Opera ECMAScript bug</a> <small>(answer @ StackOverflow)</small></li>
+        <li><a href="http://stackoverflow.com/questions/12260375/javascript-overwriting-functions-prototype-bad-practice/12260750#12260750">Overwriting object prototype</a> <small>(answer @ StackOverflow)</small></li>
+        <li><a href="http://stackoverflow.com/questions/2569192/image-resize-to-fit-screen/7154973#7154973">Image resize solution</a> <small>(answer @ StackOverflow)</small></li>
+        <li><a href="https://github.com/nottrobin/jQuery-html5fixes-plugin/blob/master/jquery.html5fixes.js">jQuery html5fixes plugin</a> <small>(code @ Github)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2012/03/13/javascript-closures-passing-an-object-context-to-a-callback-function/">JavaScript closures</a> <small>(article @ my blog)</small></li>
+    </ul>
+</nav>
+
+Performance
+===
+
+I am very interested in front-end performance, and have applied and developed my knowledge of optimising front-end performance in every job I've had.
+
+Although some performance tweaks can be achieved purely by structuring markup differently (e.g. load JavaScript at the end of the document), [most tweaks](http://developer.yahoo.com/performance/rules.html) (like concatenating and minifying CSS and JavaScript) require work throughout the project.
+
+Lately I'm particularly interested in performance benefits from aspects of responsive design, e.g. serving [responsive images](http://www.w3.org/community/respimg/) and [lazy-loading](http://en.wikipedia.org/wiki/Lazy_loading) extraneous content.
+
+I'm also very interested in the potential use of the [cache manifest](http://en.wikipedia.org/wiki/Cache_manifest_in_HTML5) to both dramatically improve performance and make content available while offline.
+
+<nav class="examples-navigation">
+    <ul>
+        <li><a href="http://stackoverflow.com/questions/12279544/which-css-selectors-or-rules-can-significantly-effect-front-end-layout-renderi">CSS Performance</a> <small>(question @ StackOverflow)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2012/03/13/website-front-end-performance-tips/">Front-end performance tips</a> <small>(article @ my blog)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2013/06/20/loading-fonts-as-data-urls/">Loading fonts as data URLs for performance</a> <small>(article @ my blog)</small></li>
+        <li><a href="https://github.com/nottrobin/data-uri-fonts">Data URL CSS fonts</a> <small>(code @ Github)</small></li>
+    </ul>
+</nav>
+
+Usability
+===
+
+My interest in the user experience was my main motivation for doing my [MSc in Interactive Systems Design](/education/#msc-interactive-systems-design), which taught me to think in terms of systems, and to recognise that people are a central part of every human system. I also learned the key [usability principles](http://www.nngroup.com/articles/ten-usability-heuristics/) how to conduct and interpret user studies.
+
+I'm very interested in user design. Even when there's no time to conduct user studies, we can always benefit from prioritising usability over aesthetics (which [doesn't necessarily](http://www.mattstempeck.com/2013/09/17/is-beauty-or-usability-more-important-in-product-design-spoiler-both/) mean sacrificing beauty), and following established [UX patterns](http://ui-patterns.com/).
+
+I also don't believe that usability stops with the end user. Code, email, prose, and meetings should all be as usable as possible throughout projects and teams. Striving for ease of use is a mission for the whole of life, and is tied up, in my mind, with a quest for simplicity.
+
+<nav class="examples-navigation">
+    <ul>
+        <li><a href="http://ux.stackexchange.com/questions/44462/where-should-i-place-a-live-chat-link-on-my-page">Where should I place a live chat link?</a> <small>(question @ StackExchange)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2013/02/18/optimal-font-size/">Optimal font-size, line-height, line-length</a> <small>(article @ my blog)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2013/03/02/awesome-in-site-user-feedback/">An in-site user feedback tool</a> <small>(article @ my blog)</small></li>
+    </ul>
+</nav>

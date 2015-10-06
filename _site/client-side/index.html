@@ -1,0 +1,283 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Client-side skills | Robin Winslow's CV</title>
+
+        <meta name="description" content="I'm Robin Winslow, a web developer. These are my client-side skills.">
+
+        <script>
+            /* Google Analytics */
+            var _gaq=[
+                ['_require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js'],
+                ['_setAccount','UA-2993676-6'],
+                ['_trackPageview']
+            ];
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = '//www.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+            /* Helper function for fetching a JSON resource */
+            function getJson(url, callback)
+            {
+                var request = window.ActiveXObject ? new ActiveXObject("Microsoft.XMLHTTP") : new XMLHttpRequest();
+
+                request.onreadystatechange = function() {
+                    if (request.readyState === 4) {
+                        callback(request.responseText);
+                    }
+                }
+
+                request.open('GET', url, true)
+                request.send()
+            }
+        </script>
+
+        <!--[if !(lte IE 8)]><!-->
+        <script type="text/javascript">
+           (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+        </script>
+        <!--<![endif]-->
+
+        <link rel="icon" href="http://i.imgur.com/cGGLMfO.png" type="image/png" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        <link rel="stylesheet" href="/css/font-awesome.css" />
+        <link rel="stylesheet" href="/css/global.css" />
+    </head>
+
+    <body>
+        <header class="vcard">
+            <nav class="external-navigation">
+                <ul>
+                    <li><a href="http://robinwinslow.co.uk" class="fa fa-pencil">My blog</a></li>
+                    <li><a href="https://github.com/nottrobin" class="fa fa-github">
+                        Github <small id="js-replace-repos"></small>
+                    </a></li>
+                    <li><a href="http://stackexchange.com/users/304176/robin-winslow" class="fa fa-stack-exchange">
+                        StackExchange <small id="js-replace-rep"></small>
+                    </a></li>
+                    <li><a href="https://twitter.com/nottrobin" class="fa fa-twitter">Twitter</a></li>
+                </ul>
+            </nav>
+
+            <h1 class="email headline fn n">
+                <span class="given-name">Robin</span>
+                <span class="family-name">Winslow</span>
+            </h1>
+
+            <nav class="contact-navigation muted">
+                <ul>
+                    <li>
+                        <a href="mailto:robin@robinwinslow.co.uk" class="email">robin@robinwinslow.co.uk</a>
+                    </li>
+                    <li>
+                        <a href="tel:07795070704" class="tel">07795070704</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="current-role" class="notice">
+                <p>On <time datetime="2014-03-12">12th March 2014</time> I started <a href="http://design.canonical.com/author/nottrobin/">my new job</a> in <a href="http://www.canonical.com/">Canonical</a>'s <a href="http://design.canonical.com/team/">design team</a>.<br/>I am therefore <strong>no longer looking for new opportunities</strong>.</p>
+            </section>
+
+            <script>
+                getJson(
+                    'https://api.github.com/users/nottrobin?client_id=4cfe6965dc7e3dadaf3f&client_secret=f1e5bf0d3fc92dc6503d1869e9e2ed10ee8a6faa',
+                    function(githubJson) {
+                        var githubInfo = JSON ? JSON.parse(githubJson) : eval('(' + githubJson + ')');
+
+                        document.getElementById('js-replace-repos').innerHTML = githubInfo.public_repos + ' repos';
+                    }
+                );
+                getJson(
+                    'https://api.stackexchange.com/2.2/users/613540/?site=stackoverflow',
+                    function(stackoverflowJson) {
+                        var stackoverflowInfo = JSON ? JSON.parse(stackoverflowJson) : eval('(' + stackoverflowJson + ')');
+
+                        document.getElementById('js-replace-rep').innerHTML = stackoverflowInfo.items[0].reputation + ' reputation';
+                    }
+                );
+            </script>
+        </header>
+
+        <nav class="site-navigation">
+            <ul>
+                <li class="nav-home">
+                    <a href="/">Summary</a>
+                </li>
+                <li class="nav-roles">
+                    <a href="/roles/">Recent roles</a>
+                </li>
+                <li class="nav-education">
+                    <a href="/education/">Education</a>
+                </li>
+                <li class="nav-server-side">
+                    <a href="/server-side/">Server-side skills</a>
+                </li>
+                <li class="nav-client-side">
+                    <a href="/client-side/">Client-side skills</a>
+                </li>
+                <li class="nav-publications">
+                    <a href="/publications/">Publications</a>
+                </li>
+                <li class="nav-about-me">
+                    <a href="/about-me/">About me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+        <nav class="page-navigation">
+    <ul>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#responsive-design">Responsive design</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+        <li><a href="#performance">Performance</a></li>
+        <li><a href="#usability">Usability</a></li>
+    </ul>
+</nav>
+
+<h1 id="html">HTML</h1>
+
+<p>Every developer knows how to write HTML, but I care deeply about writing semantic markup. It is the language of the web, and therefore the language in which the large majority of the information available to humanity is now written. For this reason, writing clear HTML is fantastically important.</p>
+
+<p>HTML elements should be used to assign semantic meaning to areas in a document, rather than as handles for code. This has been made vastly easier with the addition of <a href="http://html5doctor.com/lets-talk-about-semantics/">new semantic elements</a>, and the removal of <a href="http://demosthenes.info/blog/251/The-Differences-Between-HTML5-And-What-You-Know#html5-simplification">some complexities</a> in HTML5.</p>
+
+<p>Writers of HTML should try as far as possible to avoid using any elements that don’t add semantic meaning. Rendering of complex layouts should be done by the CSS wherever possible (and, if necessary, JavaScript). We should also avoid adding inline styles or script tags to keep the HTML clean.</p>
+
+<p>I am so very glad that the <a href="http://www.w3.org/">W3C</a> are moving away from strict standardisation of HTML, with the HTML5 spec being much more flexible than previous specs. HTML needs to be as quick, easy and forgiving to write as possible.</p>
+
+<p>Writing expressive, semantic and clean HTML will not only significantly ease maintenance, but will encourage overall simpler designs and architectures, and be inherently more accessible and better for <a href="http://en.wikipedia.org/wiki/Search_engine_optimization">SEO</a>.</p>
+
+<nav class="examples-navigation">
+    <ul>
+        <li><a href="https://github.com/nottrobin/semantic-design/blob/master/index.html">Semantic design</a> <small>(code @ Github)</small></li>
+    </ul>
+</nav>
+
+<h1 id="css">CSS</h1>
+
+<p>I was first trained in CSS at Tamar in 2005, and have eagerly taken ownership over many CSS projects in every job since then.</p>
+
+<p>I have a deep understanding of the layout models of modern browsers, and I’m experienced in recreating simple and complex designs with straightforward CSS. I apply the <a href="https://github.com/stubbornella/csslint/wiki/Rules">CSSLint rules</a> and I use the principles behind <a href="http://oocss.org/">OOCSS</a> and <a href="http://smacss.com/">SMACSS</a> to write maintainable and modular CSS.</p>
+
+<p>I have experience using <a href="http://sass-lang.com/">SASS</a> (and <a href="http://lesscss.org/">LESS</a>) to help keep CSS code <a href="http://en.wikipedia.org/wiki/Don%27t_Repeat_Yourself">DRY</a> and structured.</p>
+
+<p>I am a big fan of <a href="http://en.wikipedia.org/wiki/Progressive_enhancement">progressive enhancement</a>, and I will always choose it as a solution over having to target styling rules at specific browsers. Simplicity is the key to responsive design.</p>
+
+<p>I believe that in writing CSS it’s important to embrace flexibility, to allow the page to respond natively to different browsers and devices. For example, I prefer to base my font sizes on the device’s default size, rather than specifying an absolute font-size, and I tend to use <code>max-width</code> rather than <code>width</code> to allow the design to respond to the device width.</p>
+
+<nav class="examples-navigation">
+    <ul>
+        <li><a href="http://stackoverflow.com/questions/12279544/which-css-selectors-or-rules-can-significantly-effect-front-end-layout-renderi">CSS Performance</a> <small>(question @ StackOverflow)</small></li>
+        <li><a href="http://stackoverflow.com/questions/7141874/detecting-whether-theres-overflow-or-not-without-javascript/7142067#7142067">Show/hide button with CSS</a> <small>(answer @ StackOverflow)</small></li>
+        <li><a href="http://stackoverflow.com/questions/12272047/css3-selector-for-not-a-and-not-b/12272090#12272090">Not A and Not B selector</a> <small>(answer @ StackOverflow)</small></li>
+        <li><a href="https://github.com/nottrobin/robin-blog/tree/master/_scss">SASS (SCSS) for my blog</a> <small>(code @ Github)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2012/03/13/css-best-practice-tips/">CSS best practice tips</a> <small>(article @ my blog)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2012/11/16/sass-just-became-feasible/">Sass just became feasible</a> <small>(article @ my blog)</small></li>
+    </ul>
+</nav>
+
+<h1 id="responsive-design">Responsive design</h1>
+
+<p>I am a big fan of <a href="http://en.wikipedia.org/wiki/Responsive_design">responsive design</a>, which to me goes hand in hand with progressive enhancement as an invaluable principle that should be applied to all front-end projects. With the number of different devices of all sizes and capabilities growing far more rapidly than we could possibly keep track of, it is paramount to write front-end code to be as flexible as possible.</p>
+
+<p>Although I’ve never worked on a “responsive project”, by writing simple and flexible CSS, I have made a number of design projects responsive by default, even though responsiveness was not in the plan.</p>
+
+<p>Ideally, new projects would be designed and implemented “<a href="http://designshack.net/articles/css/mobilefirst/">mobile first</a>”, firstly to keep the project focused on the really important elements of each page, and secondly so that extraneous content doesn’t even get sent to a small device, which probably has a slower internet connection. I am very much looking forward to working on my first mobile first project, hopefully in the near future.</p>
+
+<nav class="examples-navigation">
+    <ul>
+        <li>
+            <a href="http://www.arena-blinds.com/">Arena-Blinds.com</a>
+            <small>
+                (responsive website @
+                <a href="/roles/#lead-developer">Hillarys</a>)
+            </small>
+        </li>
+        <li>
+            <a href="http://semantic-design.herokuapp.com/">Semantic design</a>
+            <small>(responsive website @ Heroku)</small>
+        </li>
+        <li>
+            <a href="https://github.com/nottrobin/semantic-design/blob/master/basic.css">Semantic design CSS</a>
+            <small>(code @ Github)</small>
+        </li>
+    </ul>
+</nav>
+
+<h1 id="javascript">JavaScript</h1>
+
+<p>I learned JavaScript basics during my Computer Science BSc, but I first put it into practice at Tamar in 2005, eventually becoming their principal JavaScript expert and creating a large JavaScript library.</p>
+
+<p>I understand JavaScript’s <a href="http://en.wikipedia.org/wiki/Functional_programming">functional</a> roots, its <a href="http://en.wikipedia.org/wiki/Prototype-based_programming">prototype-based model</a> and I am experienced in <a href="http://en.wikipedia.org/wiki/Event-based_programming">event-driven programming</a>. I know how to use closures, and encapsulate code in a function to prevent it polluting the global space, and I am familiar with Douglas Crockford’s <a href="http://javascript.crockford.com/code.html">JavaScript code conventions</a>.</p>
+
+<p>I have used JavaScript extensively in every job since then, and have created modules in <a href="http://jquery.com/">jQuery</a>, <a href="http://yuilibrary.com/">YUI</a> and <a href="http://mootools.net/">MooTools</a>. I like to write well-structured and <a href="http://robinwinslow.co.uk/2013/11/22/expressive-coding/">expressive</a> JavaScript, and I’m a big fan of <a href="http://backbonejs.org/">backbone</a> and <a href="http://requirejs.org/">require.js</a> (or, indeed, any AMD implementation).</p>
+
+<p>Having said all that, I also believe that JavaScript should only be used where appropriate. In a traditional website, JavaScript should only be the sugar on top. As much of the functionality as possible should be provided through traditional HTML, CSS and native browser functionality. Where functionality is supported natively by the browser (e.g. <a href="http://www.hongkiat.com/blog/html5-form-input-type/">HTML5 input fields</a>, <a href="http://diveintohtml5.info/forms.html#validation">form validation</a>, <code>&lt;video&gt;</code>) this should be used in preference to custom JavaScript. This will lead to a more stable, maintainable and accessible website.</p>
+
+<nav class="examples-navigation">
+    <ul>
+        <li><a href="http://stackoverflow.com/questions/7058148/is-it-correct-that-json-stringify2-2-may-return-false/7058563#7058563">Opera ECMAScript bug</a> <small>(answer @ StackOverflow)</small></li>
+        <li><a href="http://stackoverflow.com/questions/12260375/javascript-overwriting-functions-prototype-bad-practice/12260750#12260750">Overwriting object prototype</a> <small>(answer @ StackOverflow)</small></li>
+        <li><a href="http://stackoverflow.com/questions/2569192/image-resize-to-fit-screen/7154973#7154973">Image resize solution</a> <small>(answer @ StackOverflow)</small></li>
+        <li><a href="https://github.com/nottrobin/jQuery-html5fixes-plugin/blob/master/jquery.html5fixes.js">jQuery html5fixes plugin</a> <small>(code @ Github)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2012/03/13/javascript-closures-passing-an-object-context-to-a-callback-function/">JavaScript closures</a> <small>(article @ my blog)</small></li>
+    </ul>
+</nav>
+
+<h1 id="performance">Performance</h1>
+
+<p>I am very interested in front-end performance, and have applied and developed my knowledge of optimising front-end performance in every job I’ve had.</p>
+
+<p>Although some performance tweaks can be achieved purely by structuring markup differently (e.g. load JavaScript at the end of the document), <a href="http://developer.yahoo.com/performance/rules.html">most tweaks</a> (like concatenating and minifying CSS and JavaScript) require work throughout the project.</p>
+
+<p>Lately I’m particularly interested in performance benefits from aspects of responsive design, e.g. serving <a href="http://www.w3.org/community/respimg/">responsive images</a> and <a href="http://en.wikipedia.org/wiki/Lazy_loading">lazy-loading</a> extraneous content.</p>
+
+<p>I’m also very interested in the potential use of the <a href="http://en.wikipedia.org/wiki/Cache_manifest_in_HTML5">cache manifest</a> to both dramatically improve performance and make content available while offline.</p>
+
+<nav class="examples-navigation">
+    <ul>
+        <li><a href="http://stackoverflow.com/questions/12279544/which-css-selectors-or-rules-can-significantly-effect-front-end-layout-renderi">CSS Performance</a> <small>(question @ StackOverflow)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2012/03/13/website-front-end-performance-tips/">Front-end performance tips</a> <small>(article @ my blog)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2013/06/20/loading-fonts-as-data-urls/">Loading fonts as data URLs for performance</a> <small>(article @ my blog)</small></li>
+        <li><a href="https://github.com/nottrobin/data-uri-fonts">Data URL CSS fonts</a> <small>(code @ Github)</small></li>
+    </ul>
+</nav>
+
+<h1 id="usability">Usability</h1>
+
+<p>My interest in the user experience was my main motivation for doing my <a href="/education/#msc-interactive-systems-design">MSc in Interactive Systems Design</a>, which taught me to think in terms of systems, and to recognise that people are a central part of every human system. I also learned the key <a href="http://www.nngroup.com/articles/ten-usability-heuristics/">usability principles</a> how to conduct and interpret user studies.</p>
+
+<p>I’m very interested in user design. Even when there’s no time to conduct user studies, we can always benefit from prioritising usability over aesthetics (which <a href="http://www.mattstempeck.com/2013/09/17/is-beauty-or-usability-more-important-in-product-design-spoiler-both/">doesn’t necessarily</a> mean sacrificing beauty), and following established <a href="http://ui-patterns.com/">UX patterns</a>.</p>
+
+<p>I also don’t believe that usability stops with the end user. Code, email, prose, and meetings should all be as usable as possible throughout projects and teams. Striving for ease of use is a mission for the whole of life, and is tied up, in my mind, with a quest for simplicity.</p>
+
+<nav class="examples-navigation">
+    <ul>
+        <li><a href="http://ux.stackexchange.com/questions/44462/where-should-i-place-a-live-chat-link-on-my-page">Where should I place a live chat link?</a> <small>(question @ StackExchange)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2013/02/18/optimal-font-size/">Optimal font-size, line-height, line-length</a> <small>(article @ my blog)</small></li>
+        <li><a href="http://robinwinslow.co.uk/2013/03/02/awesome-in-site-user-feedback/">An in-site user feedback tool</a> <small>(article @ my blog)</small></li>
+    </ul>
+</nav>
+
+        </main>
+
+        <footer>
+            <aside>
+                <p class="side">Please <a href="http://creativecommons.org/licenses/by-sa/3.0/">copy, modify and reshare</a> my work.</p>
+                <p>By <a href="https://plus.google.com/104026832761488144614" rel="author">Robin Winslow</a>.</p>
+                <p class="github-project"><a href="https://github.com/nottrobin/robinwinslow-cv">Fork this website project on Github</a>.</p>
+            </aside>
+        </footer>
+    </body>
+</html>
