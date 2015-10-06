@@ -6,11 +6,11 @@ description: "I'm Robin Winslow, a web developer. These are my publications."
 
 <nav class="page-navigation">
     <ul>
-        <li><a href="#static-site-generators-presentation">Static Site Generators</a></li>
-        <li><a href="#html5-and-how-to-use-it-presentation">HTML5 and how to use it</a></li>
-        <li><a href="#let-39-s-talk-about-css-presentation">Let's talk about CSS</a></li>
-        <li><a href="#micro-generation-schemes-journal-paper">Micro-generation schemes</a></li>
-        <li><a href="#other-publications">Other publications</a></li>
+        <li><a href="#static-site-generators-smallpresentationsmall">Static Site Generators</a></li>
+        <li><a href="#html5-and-how-to-use-it-smallpresentationsmall">HTML5 and how to use it</a></li>
+        <li><a href="#lets-talk-about-css-smallpresentationsmall">Let's talk about CSS</a></li>
+        <li><a href="#micro-generation-schemes-smalljournal-papersmall">Micro-generation schemes</a></li>
+        <li><a href="#other-presentations">Other presentations</a></li>
         <li><a href="#my-blog">My blog</a></li>
     </ul>
 </nav>
@@ -27,7 +27,7 @@ HTML5 and how to use it <small>(presentation)</small>
 
 I gave a presentation to the digital department at IPC Media [on HTML5](http://prezi.com/vwrbwbhbwt2m/html5-and-how-to-use-it/).
 
-Let's talk about CSS  <small>(presentation)</small>
+Let's talk about CSS <small>(presentation)</small>
 ===
 
 I gave a presentation to the digital department at IPC Media [about CSS best practice and the potential benefits of CSS preprocessors](http://prezi.com/-eq7oqt-i3cs/lets-talk-about-css/).

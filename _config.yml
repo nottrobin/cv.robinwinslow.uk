@@ -1,5 +1,4 @@
-markdown: redcarpet
-redcarpet:
-    extensions: [with_toc_data]
+kramdown:
+  auto_ids: true
 exclude: [LICENSE.md, README.md]
 permalink: pretty
