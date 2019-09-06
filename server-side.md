@@ -41,6 +41,45 @@ I am also a big fan of [behaviour driven development](http://en.wikipedia.org/wi
     </ul>
 </nav>
 
+<h2 class="side-heading" id="python">Python</h2>
+
+Python 3 is the primary server-side language we use [at Canonical](https://cv.robinwinslow.uk/roles/#lead-web-developer), where I've been for over 5 years. We manage [about 20 websites](https://github.com/canonical-web-and-design?utf8=%E2%9C%93&q=topic%3Awebsite) in Flask and Django, and have [written and published](https://pypi.org/search/?q=canonicalwebteam) a number of supporting Python modules, many written by me. I have developed a deep understanding of [web hosting](https://pypi.org/project/canonicalwebteam.flask-base/), [writing](https://github.com/canonical-web-and-design/assets.ubuntu.com) and [communicating with APIs](https://pypi.org/project/canonicalwebteam.http/), caching libraries, writing [Charms](https://charmsreactive.readthedocs.io/en/latest/) etc. in Python.
+
+My first experience of Python and Django was at the first [NHS Hack Day](http://www.theguardian.com/healthcare-network/2012/jun/06/nhs-hack-day-apps-patient-hell) (that's me in the picture!) working on [NHSBugs.net](http://nhsbugs.net/) ([repository]( https://github.com/openhealthcare/nhsbugs )). I instantly liked the language's semantic simplicity and straightforward approach to solving a large number of problems (even if it's not always the fastest language).
+
+<nav class="examples-navigation">
+    <ul>
+        <li>
+            <a href="https://github.com/canonical-web-and-design/ubuntu.com">ubuntu.com: Canonical's most important website, written in Flask</a>
+            <small>(code @ Github)</small>
+        </li>
+        <li>
+            <a href="https://github.com/canonical-web-and-design/canonicalwebteam.yaml-responses">yaml-responses: A simple way to define redirects and deleted endpoints for Flask and Django sites</a>
+            <small>(code @ Github)</small>
+        </li>
+        <li>
+            <a href="https://github.com/canonical-web-and-design/canonicalwebteam.flask-base">flask-base: A starting point for our team's Flask websites</a>
+            <small>(code @ Github)</small>
+        </li>
+        <li>
+            <a href="https://github.com/nottrobin/django-tutorial">My version of the Django tutorial: Polls app</a>
+            <small>(code @ Github)</small>
+        </li>
+        <li>
+            <a href="https://github.com/nottrobin/cv.robinwinslow.uk">This website project</a>
+            <small>(code @ Github)</small>
+        </li>
+        <li>
+            <a href="http://robinwinslow.co.uk/2014/01/05/summary-of-python-code-style-conventions/">Python coding conventions</a>
+            <small>(article @ my blog)</small>
+        </li>
+        <li>
+            <a href="http://robinwinslow.co.uk/2013/12/26/python-3-4-virtual-environment/">How to create a virtual environment in Python 3.4 beta</a>
+            <small>(article @ my blog)</small>
+        </li>
+    </ul>
+</nav>
+
 <h2 class="side-heading" id="php">PHP</h2>
 
 I've primarily been a [PHP](http://php.net) developer since 2007, when I branched out from doing mainly [Perl](http://www.perl.org/)-based web projects for Tamar. I have a deep knowledge of PHP's setup, syntax, API and capabilities. I've used PHP in various environments and setups, and often [compiled it from source](http://stackoverflow.com/questions/7167860/compiling-php-with-gd-and-libjpeg-support). I keep up to date with the new features added in [new versions of PHP](http://www.php.net/manual/en/migration55.new-features.php).
@@ -120,41 +159,6 @@ Through these projects and ongoing maintenance I now have a fairly deep understa
         <li>
             <a href="https://github.com/Hillarys/dotnet-hillarys">Hillarys .net library</a>
             <small>(code @ Github)</small>
-        </li>
-    </ul>
-</nav>
-
-<h2 class="side-heading" id="python">Python</h2>
-
-My first experience of Python and Django was at the first [NHS Hack Day](http://www.theguardian.com/healthcare-network/2012/jun/06/nhs-hack-day-apps-patient-hell) (that's me in the picture!) working on [NHSBugs.net](http://nhsbugs.net/) ([repository]( https://github.com/openhealthcare/nhsbugs )). Since then I didn't get a chance to work on any more Python projects until the beginning of December 2013 when I decided it was time to properly learn a new open-source language that was a bit less patchwork than PHP. Python was the obvious choice.
-
-I first went through the official [Django tutorial](https://docs.djangoproject.com/en/1.6/intro/tutorial01/). I then wanted to try out more projects in Django, so I created this site, and I opted to do [an assignment](https://github.com/nottrobin/mysociety-questionnaire) for [mySociety](http://www.mysociety.org/) in Django as well.
-
-I have also had the chance to read a fair bit about Python and play around with little coding examples, and I now have a fairly complete understanding of the language's syntax and functions ([everything is an object]( http://www.diveintopython.net/getting_to_know_python/everything_is_an_object.html )), including [list comprehensions](http://en.wikipedia.org/wiki/List_comprehension#Python), [generators](http://en.wikipedia.org/wiki/Python_syntax_and_semantics#Generators) and [decorators](https://wiki.python.org/moin/PythonDecorators).
-
-I also know most of the [differences](http://docs.python.org/3/whatsnew/3.0.html) between Python 2.7 and 3.3, and I've played around with both running side-by-side, and I've built Python 3.4 beta from source.
-
-<nav class="examples-navigation">
-    <ul>
-        <li>
-            <a href="https://github.com/nottrobin/django-tutorial">My version of the Django tutorial: Polls app</a>
-            <small>(code @ Github)</small>
-        </li>
-        <li>
-            <a href="https://github.com/nottrobin/cv.robinwinslow.uk">This website project</a>
-            <small>(code @ Github)</small>
-        </li>
-        <li>
-            <a href="https://github.com/nottrobin/mysociety-questionnaire">mySociety assignment: questionnaire</a>
-            <small>(code @ Github)</small>
-        </li>
-        <li>
-            <a href="http://robinwinslow.co.uk/2014/01/05/summary-of-python-code-style-conventions/">Python coding conventions</a>
-            <small>(article @ my blog)</small>
-        </li>
-        <li>
-            <a href="http://robinwinslow.co.uk/2013/12/26/python-3-4-virtual-environment/">How to create a virtual environment in Python 3.4 beta</a>
-            <small>(article @ my blog)</small>
         </li>
     </ul>
 </nav>
