@@ -141,7 +141,7 @@ I also know most of the [differences](http://docs.python.org/3/whatsnew/3.0.html
             <small>(code @ Github)</small>
         </li>
         <li>
-            <a href="https://github.com/nottrobin/robinwinslow-cv">This website project</a>
+            <a href="https://github.com/nottrobin/cv.robinwinslow.uk">This website project</a>
             <small>(code @ Github)</small>
         </li>
         <li>
